@@ -161,4 +161,63 @@ Defines contact information:
 ```
 
 ---
-This README provides a detailed introduction to HTML concepts with practical examples.
+ 
+ # HTML     Assignment
+
+## Objective  
+This assignment will help you understand key HTML elements and attributes, including:  
+- Elements: `<html>`, `<head>`, `<body>`, `<div>`, `<blockquote>`, `<address>`, `<pre>`  
+- Attributes: `bgcolor`, `text`, `align`  
+
+## Instructions  
+
+1. **Create an HTML file** named `index.html`.  
+2. **Structure your page using the following elements:**  
+
+   - Start with `<!DOCTYPE html>` to define the document type.  
+   - Use `<html>` as the root element.  
+   - Inside `<head>`, include a `<title>` with a meaningful title.  
+   - Inside `<body>`, apply the `bgcolor`, `text`, and `align` attributes.  
+   - Use **two `<div>` elements** to group content and apply `align` attributes.  
+   - Add a **blockquote** (`<blockquote>`) with a famous quote, aligned to the center.  
+   - Use the **`<address>` element** to display a fictional contact address.  
+   - Add **preformatted text** (`<pre>`) to display text exactly as written, including spaces and line breaks.  
+
+## Example Structure  
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My HTML Assignment</title>
+</head>
+<body bgcolor="lightblue" text="darkblue" align="center">
+    
+    <div align="left">
+        <h1>Welcome to My Webpage</h1>
+        <p>This is a simple webpage demonstrating HTML elements and attributes.</p>
+    </div>
+
+    <div align="right">
+        <h2>Blockquote Example</h2>
+        <blockquote align="center">
+            "The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt
+        </blockquote>
+    </div>
+
+    <h2>Contact Information</h2>
+    <address>
+        123 Web Street, HTML City, CodeLand 45678<br>
+        Email: example@email.com<br>
+        Phone: +123-456-7890
+    </address>
+
+    <h2>Preformatted Text Example</h2>
+    <pre>
+        Name:       John Doe
+        Age:        25
+        Occupation: Web Developer
+    </pre>
+
+</body>
+</html>
