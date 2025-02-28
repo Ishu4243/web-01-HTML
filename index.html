@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>My HTML Assignment</title>
@@ -38,6 +38,197 @@
       };">
     <p>This text wraps around the image.</p>
 </div>
+
+<h2 id="section1">Section 1</h2>
+<a href="#section1">Go to Section 1</a>
+<a href="mailto:someone@example.com">Send Email</a>
+
     </html>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table with Styled Borders</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Important for collapsing borders */
+            margin-bottom: 20px; /* Add some space below the table */
+        }
+
+        th, td {
+            border: 2px solid #3498db; /* Blue border for all cells */
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light gray background for header cells */
+            font-weight: bold;
+        }
+
+        /* Styling the table border itself */
+        table.outer-border {
+          border: 5px solid #2ecc71; /* Green outer border */
+        }
+
+        /* Dotted borders */
+        table.dotted-borders th, table.dotted-borders td{
+          border-style: dotted;
+        }
+
+        /* Dashed Borders */
+        table.dashed-borders th, table.dashed-borders td{
+          border-style: dashed;
+        }
+
+        /* Double Borders */
+        table.double-borders th, table.double-borders td{
+          border-style: double;
+        }
+
+        /* Mixed Borders */
+        table.mixed-borders td:nth-child(1){
+          border-right: 3px dashed red;
+        }
+        table.mixed-borders td:nth-child(2){
+          border-left: 3px dotted blue;
+        }
+8
+        /* Border radius */
+        table.rounded-borders {
+          border-radius: 10px;
+          overflow: hidden; /*Needed to clip the inner borders*/
+        }
+
+        table.rounded-borders th, table.rounded-borders td {
+          border-radius: 0;
+        }
+     p.p1{
+      text-align: left;
+      color:#3498db;
+     }
+    </style>
+</head>
+<body>
+
+    <h2>Table with Basic Borders</h2>
+    <table>
+      <caption>Monthly Savings</caption>
+        
+      <tr>
+        <th colspan="2">Combined Header</th>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+      </tr>
+        
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+    <h2>Table with Outer Border</h2>
+    <table class="outer-border">
+      <tr><th>Header 1</th><th>Header 2</th></tr>
+      <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
+
+    <h2>Table with Dotted Borders</h2>
+    <table class="dotted-borders">
+      <tr><th>Header 1</th><th>Header 2</th></tr>
+      <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
+
+    <h2>Table with Dashed Borders</h2>
+    <table class="dashed-borders">
+      <tr><th>Header 1</th><th>Header 2</th></tr>
+      <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
+
+    <h2>Table with Double Borders</h2>
+    <table class="double-borders">
+      <tr><th>Header 1</th><th>Header 2</th></tr>
+      <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
+
+    <h2>Table with Mixed Borders</h2>
+    <table class="mixed-borders">
+      <tr><th>Header 1</th><th>Header 2</th></tr>
+      <tr><td>Data 1</td><td>Data 2</td></tr>
+    </table>
+
+    <h2>Table with Rounded Borders</h2>
+    <table class="rounded-borders">
+      <tr><th>Header 1</th><th>Header 2</th></tr>
+      <tr><td>Data 1</td><td>Data 2</td></tr>
+      <p class="P1">jhaJhs</p>
+      <P class="P2">SGDYYIio</P>
+    </table>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form Example</title>
+</head>
+<body>
+    <h2>User Registration Form</h2>
+    <form action="submit.php" method="post">
+        <!-- Text Input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" name="interests" value="coding"> Coding
+        <input type="checkbox" name="interests" value="reading"> Reading
+        <input type="checkbox" name="interests" value="sports"> Sports<br><br>
+
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+        </select><br><br>
+
+        <!-- Text Area -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments..."></textarea><br><br>
+
+        <!-- File Upload -->
+        <label for="file">Upload Profile Picture:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset Form">
+    </form>
 </body>
 </html>
